@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+       android:gravity="center"
+
+        android:layout_centerInParent="true"
+       >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/sign"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/firstEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="First Name"
+
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/lastEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="Last Name"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"/>
+        <AutoCompleteTextView
+            android:id="@+id/bloodACTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Blood group"
+
+            android:textSize="14sp"/>
+        <CheckBox
+            android:id="@+id/conditionCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept all terms and condition"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
